@@ -1,50 +1,69 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import Header from "./Header";
+import { useEffect, useState } from 'react'
+import { useParams, Link } from 'react-router-dom'
 import { fetchProduct } from '../api/api'
+import Loader from './Loader'
+import PageContainer from './PageContainer'
 
-function ProductDetail() {
+const ProductDetail = () => {
     const { id } = useParams()
-    const [products, setProducts] = useState([]);
-    const navigate = useNavigate();
-
+    const [product, setProduct] = useState(null)
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        async function load() {
-            const prods = await fetchProduct(id);
-            setProducts(prods);
-        }
-        load()
+        fetchProduct(id)
+            .then(res => setProduct(res))
+            .finally(() => setLoading(false))
     }, [id])
 
-    return (
-        <>
-            <Header />
-            <div className="p-6">
-                <h2 className="text-2xl font-bold mb-4">Product Details</h2>
-                <div className="border rounded-lg p-4 shadow-md">
-                    <img src={products.imageUrl} className="h-48 object-cover mb-4 w-48" />
-                    <p><strong>Name:</strong> {products.name}</p>
-                    <p><strong>Description:</strong> {products.description}</p>
-                    <p><strong>Price:</strong> {products.price}</p>
-                    <p><strong>Category:</strong> {products.category}</p>
-                    <p><strong>Stock:</strong> {products.stockCount}</p>
+    if (loading || !product) return <Loader />
 
-                    <button
-                        className="p-1 mt-4 bg-yellow-500"
-                        onClick={() => navigate(`/products/edit/${products.id}`)}
-                    >
-                        Edit Product
-                    </button><br/>
-                    <button
-                        className="p-1 mt-4 bg-yellow-500"
-                        onClick={() => navigate(`/products`)}
-                    >
-                        Back to Products
-                    </button>
+    return (
+        <PageContainer>
+            <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl font-bold">Product Details</h2>
+                <div>
+                    <Link to="/products" className="btn bg-gray-500 text-white px-4 py-2 rounded mr-2">Back to List</Link>
+                    <Link to={`/add-product/${product.id}/edit`} className="btn bg-blue-600 text-white px-4 py-2 rounded">Edit Product</Link>
                 </div>
             </div>
-        </>
+
+            <div className="grid md:grid-cols-2 gap-8">
+                <div className="w-full h-[300px] bg-gray-200 flex items-center justify-center rounded">
+                    {product.imageUrl ? (
+                        <img src={product.imageUrl} alt={product.name} className="object-contain h-full w-full rounded" />
+                    ) : (
+                        <span className="text-gray-500">No Image</span>
+                    )}
+                </div>
+
+                <div>
+                    <h1 className="text-3xl font-semibold text-gray-800 mb-2">{product.name}</h1>
+                    <div className="text-xl text-green-600 font-bold mb-4">${product.price}</div>
+                    <p className="text-gray-700 mb-6 leading-relaxed">{product.description}</p>
+
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-gray-100 p-4 rounded">
+                            <div className="text-sm text-gray-500 font-semibold">Category</div>
+                            <div className="mt-1">{product.category}</div>
+                        </div>
+                        <div className="bg-gray-100 p-4 rounded">
+                            <div className="text-sm text-gray-500 font-semibold">Stock Count</div>
+                            <div className="mt-1">{product.stockCount} units</div>
+                        </div>
+                        <div className="bg-gray-100 p-4 rounded">
+                            <div className="text-sm text-gray-500 font-semibold">Date Added</div>
+                            <div className="mt-1">{new Date(product.createdAt).toLocaleDateString()}</div>
+                        </div>
+                        <div className="bg-gray-100 p-4 rounded">
+                            <div className="text-sm text-gray-500 font-semibold">Status</div>
+                            <div className="mt-1 text-green-600 font-medium">
+                                {product.stockCount > 0 ? 'In Stock' : 'Out of Stock'}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </PageContainer>
     )
 }
 

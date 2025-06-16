@@ -1,42 +1,154 @@
 {
-  "user": [
-    {
-      "id": "1",
-      "email": "admin@example.com",
-      "password": "password123"
-    }
-    
-  ],
   "products": [
     {
-      "id": "1",
-      "name": "Apple Ipad123",
-      "description": "This is a apple ipad",
-      "price": 899.99,
+      "id": "a238",
+      "name": "OnePlus 13s",
+      "description": "OnePlus 13s | Snapdragon® 8 Elite | Smarter with OnePlus AI | Lifetime Display Warranty | 12GB+256GB | Green Silk",
+      "price": "54999",
       "category": "electronics",
-      "imageUrl": "https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipados14_widgets_062220_big.jpg.large.jpg",
-      "stockCount": 10,
-      "createdAt": "2025-05-01T10:30:002"
+      "imageUrl": "https://m.media-amazon.com/images/I/41Jy7YK8V7L._SX300_SY300_QL70_FMwebp_.jpg",
+      "stockCount": "10",
+      "createdAt": "2025-06-16T09:19:31.411Z"
     },
     {
-      "id": "2",
-      "name": "Apple Macbook456",
-      "description": "This is a apple macbook",
-      "price": 899.99,
+      "id": "4fba",
+      "name": "HP 15, 13th Gen Intel Core i3-1315U Laptop",
+      "description": "HP 15, 13th Gen Intel Core i3-1315U Laptop (12GB DDR4,512GB SSD) Anti-Glare, Micro-Edge,15.6''/39.6cm, FHD, Win11,M365 Basic(1yr),Office Home24, Silver,1.59kg, FHD Camera w/Privacy Shutter, fd0573TU",
+      "price": "34999",
       "category": "electronics",
-      "imageUrl": "https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipados14_widgets_062220_big.jpg.large.jpg",
-      "stockCount": 10,
-      "createdAt": "2025-05-01T10:30:002"
+      "imageUrl": "https://m.media-amazon.com/images/I/71nT03DWAHL._AC_UY327_FMwebp_QL65_.jpg",
+      "stockCount": "20",
+      "createdAt": "2025-06-16T09:21:01.932Z"
     },
-     {
-      "id": "3",
-      "name": "Oversize Tee 99",
-      "description": "This is a new cloth item",
-      "price": 99.99,
+    {
+      "id": "6d72",
+      "name": "HP 255 G9 Ryzen 3 Dual Core AMD Ryzen 3 Processor 3250U",
+      "description": "HP 255 G9 Ryzen 3 Dual Core AMD Ryzen 3 Processor 3250U - (8 GB/512 GB SSD/AMD Radeon Graphics) 9H237PT Thin and Light Laptop (15.6 inch, Black, 1.47 kg)",
+      "price": "24999",
+      "category": "electronics",
+      "imageUrl": "https://m.media-amazon.com/images/I/71cbbGm02pL._AC_UY327_FMwebp_QL65_.jpg",
+      "stockCount": "5",
+      "createdAt": "2025-06-16T09:22:06.664Z"
+    },
+    {
+      "id": "f73c",
+      "name": "boAt Airdopes 91 Prime",
+      "description": "boAt Airdopes 91 Prime, 45HRS Battery, 13mm Drivers, Metallic Finish, Low Latency,ENx Tech, Fast Charge, v5.3 Bluetooth TWS in Ear Earbuds Wireless Earphones with mic (Midnight Black).",
+      "price": "999",
+      "category": "electronics",
+      "imageUrl": "https://m.media-amazon.com/images/I/41549pixTSL._SX300_SY300_QL70_FMwebp_.jpg",
+      "stockCount": "50",
+      "createdAt": "2025-06-16T09:24:12.211Z"
+    },
+    {
+      "id": "684d",
+      "name": "boAt Rockerz 255 Z Plus",
+      "description": "boAt Rockerz 255 Z Plus, AI-ENx Tech, Spatial Audio, 50HRS Battery, Low Latency Mode, Fast Charge, App Support, IPX4 BT v5.3, Bluetooth Neckband, Wireless with Mic Earphones (Active/Classic Black)",
+      "price": "599",
+      "category": "electronics",
+      "imageUrl": "https://m.media-amazon.com/images/I/51UhwaQXCpL._AC_UY327_FMwebp_QL65_.jpg",
+      "stockCount": "11",
+      "createdAt": "2025-06-16T09:25:20.498Z"
+    },
+    {
+      "id": "a55e",
+      "name": "Rich Polo T Shirt",
+      "description": "Amazon Brand - Symbol Men's Solid Cotton Rich Polo T Shirt | Collar Tshirts | Half Sleeves | Plain-Regular Fit (Available in Plus Size and Combo Pack of 2).",
+      "price": "1299",
       "category": "clothing",
-      "imageUrl": "https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipados14_widgets_062220_big.jpg.large.jpg",
-      "stockCount": 99,
-      "createdAt": "2025-05-01T10:30:002"
+      "imageUrl": "https://m.media-amazon.com/images/I/713n+TxyfCL._SY879_.jpg",
+      "stockCount": "50",
+      "createdAt": "2025-06-16T09:26:50.881Z"
+    },
+    {
+      "id": "9a3d",
+      "name": "Lymio Polo T Shirt for Men.",
+      "description": "Lymio Polo T Shirt for Men || Men Casual T-Shirt || Available in Combo Packs (Polo 44 to 47).",
+      "price": "599",
+      "category": "clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/61NVTARMyoL._SY879_.jpg",
+      "stockCount": "55",
+      "createdAt": "2025-06-16T09:28:40.216Z"
+    },
+    {
+      "id": "57ab",
+      "name": "U.S. POLO ASSN. Men's Cotton Regular Fit Shirt",
+      "description": "U.S. POLO ASSN. Men's Cotton Regular Fit Shirt.",
+      "price": "1299",
+      "category": "clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/81j1r-lYxTL._SX569_.jpg",
+      "stockCount": "11",
+      "createdAt": "2025-06-16T09:30:15.990Z"
+    },
+    {
+      "id": "5d27",
+      "name": "CB-COLEBROOK Men's Casual Button Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirts",
+      "description": "CB-COLEBROOK Men's Casual Button Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirts.",
+      "price": "599",
+      "category": "clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/51-pLhPHoBL.jpg",
+      "stockCount": "60",
+      "createdAt": "2025-06-16T09:31:54.740Z"
+    },
+    {
+      "id": "4e14",
+      "name": "Majestic Man Men Comfort Slim Fit Opaque Checked Cotton Casual Shirt",
+      "description": "Majestic Man Men Comfort Slim Fit Opaque Checked Cotton Casual Shirt",
+      "price": "699",
+      "category": "clothing",
+      "imageUrl": "https://m.media-amazon.com/images/I/81nKjIkXbdL._SY879_.jpg",
+      "stockCount": "11",
+      "createdAt": "2025-06-16T09:32:54.872Z"
+    },
+    {
+      "id": "3b8c",
+      "name": "Wooden Side Table for Bedroom",
+      "description": "Wooden Side Table for Bedroom & Living Room – Bedside Stand | Small Coffee & End Table | Sofa Side Shelf | Corner Stand | Modern Bedside Organizer | Living Room Furniture | Home Decor.",
+      "price": "999",
+      "category": "furniture",
+      "imageUrl": "https://m.media-amazon.com/images/I/415z2Gd9k6L._SX300_SY300_QL70_FMwebp_.jpg",
+      "stockCount": "5",
+      "createdAt": "2025-06-16T09:34:16.967Z"
+    },
+    {
+      "id": "1f69",
+      "name": "LID BOX 4 Tier Shoe Rack with Shelf.",
+      "description": "LID BOX 4 Tier Shoe Rack with Shelf, Folding Shoe Rack for Bedroom, Living Room,Entryway, White,Footwear Stand for Home, Plastic with Cover, 4 Layer (BLACK 4 SHELF)",
+      "price": "499",
+      "category": "furniture",
+      "imageUrl": "https://m.media-amazon.com/images/I/41L5LJFeBcL._SX300_SY300_QL70_FMwebp_.jpg",
+      "stockCount": "11",
+      "createdAt": "2025-06-16T09:35:19.475Z"
+    },
+    {
+      "id": "3d38",
+      "name": "Rousrie Wooden Temple Mandir for Home.",
+      "description": "Rousrie Wooden Temple Mandir for Home with Door Cabinets | Beautiful Pooja Unit with Storage Space | with LED Light and Wall Mounts | Elegant Pooja Mandir for Home Big Size(H-17.3, L-11, B-10.6 inch).",
+      "price": "1999",
+      "category": "furniture",
+      "imageUrl": "https://m.media-amazon.com/images/I/51AMBK1IYFL._SX300_SY300_QL70_FMwebp_.jpg",
+      "stockCount": "10",
+      "createdAt": "2025-06-16T09:36:16.463Z"
+    },
+    {
+      "id": "45cd",
+      "name": "Wellborn Solid Sheesham Wood Coffee Table",
+      "description": "Wellborn Solid Sheesham Wood Coffee Table/Center Table for Living Room, Bed Room, Waiting Room, Hotels, Office, Restaurant, Cafe | Wooden Coffee Table | Sheesham Wood Coffee Table | (Walnut Finish).",
+      "price": "1899",
+      "category": "furniture",
+      "imageUrl": "https://m.media-amazon.com/images/I/41dGGbewN2L._SY300_SX300_QL70_FMwebp_.jpg",
+      "stockCount": "22",
+      "createdAt": "2025-06-16T09:37:52.642Z"
+    },
+    {
+      "id": "dfe4",
+      "name": "DecorNation Akiwa Engineer Wood TV Unit Table",
+      "description": "DecorNation Akiwa Engineer Wood TV Unit Table - One Compartment with with 2 Drawers and Shelf for Living Room, Bedroom, Office Furniture Stand (63 x 14 x 16 inches, Natural Finish).",
+      "price": "12999",
+      "category": "furniture",
+      "imageUrl": "https://m.media-amazon.com/images/I/41R7sOMVFCL._SX300_SY300_QL70_FMwebp_.jpg",
+      "stockCount": "11",
+      "createdAt": "2025-06-16T09:39:14.168Z"
     }
   ],
   "categories": [
