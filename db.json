@@ -1,0 +1,56 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "email": "admin@example.com",
+      "password": "password123"
+    }
+    
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Apple Ipad123",
+      "description": "This is a apple ipad",
+      "price": 899.99,
+      "category": "electronics",
+      "imageUrl": "https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipados14_widgets_062220_big.jpg.large.jpg",
+      "stockCount": 10,
+      "createdAt": "2025-05-01T10:30:002"
+    },
+    {
+      "id": "2",
+      "name": "Apple Macbook456",
+      "description": "This is a apple macbook",
+      "price": 899.99,
+      "category": "electronics",
+      "imageUrl": "https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipados14_widgets_062220_big.jpg.large.jpg",
+      "stockCount": 10,
+      "createdAt": "2025-05-01T10:30:002"
+    },
+     {
+      "id": "3",
+      "name": "Oversize Tee 99",
+      "description": "This is a new cloth item",
+      "price": 99.99,
+      "category": "clothing",
+      "imageUrl": "https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipados14_widgets_062220_big.jpg.large.jpg",
+      "stockCount": 99,
+      "createdAt": "2025-05-01T10:30:002"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "electronics"
+    },
+    {
+      "id": "2",
+      "name": "clothing"
+    },
+    {
+      "id": "3",
+      "name": "furniture"
+    }
+  ]
+}
